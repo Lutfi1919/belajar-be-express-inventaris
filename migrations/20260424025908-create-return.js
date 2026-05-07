@@ -32,15 +32,15 @@ module.exports = {
     });
 
     await queryInterface.addConstraint("Returns", {
-      fields: ['loan_id'], //COlumn fk
+      fields: ['loan_id'], // Column fk
       type: 'foreign key',
       name: "fk_custom_loan_id", // alias nya
       references: { // pk nya ada dimana
         table: "Loans",
         field: 'id' // nama pk nya
       },
-      onDelete: 'CASCADE', //Jika pk dihapus, data FK ikut terhapus
-      onUpdate: 'CASCADE', //Jika Pk(id) di ubah, id fk ikut terubah
+      onDelete: 'CASCADE', // jika PK dihapus, data FK ikut terhapus
+      onUpdate: 'CASCADE', // jika PK (id) di ubah, id FK ikut terubah
     });
 
   },

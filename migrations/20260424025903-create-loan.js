@@ -39,8 +39,8 @@ module.exports = {
         table: "Items",
         field: 'id' // nama pk nya
       },
-      onDelete: 'CASCADE', // Jika pk dihapus, data FK ikut terhapus
-      onUpdate: 'CASCADE', // Jika PK(id) di ubah, id fk ikut terubah
+      onDelete: 'CASCADE', // Jika PK dihapus, data FK ikut terhapus
+      onUpdate: 'CASCADE', // Jika PK (id) di ubah, id fk ikut terubah
     });
   },
   async down(queryInterface, Sequelize) {

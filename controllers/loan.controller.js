@@ -56,7 +56,8 @@ module.exports = {
     getLoans: async (req, res) => {
         try {
             const { page, limit } = req.query;
-            // page : ambil data di halaman ke berapa, limit : munculin data berapa
+            // page : ambil data di halaman ke berapa
+            // limit : munculin data berapa
             // offset : menentukan data yang dimunculkan mulai dari berapa
             const offset = (Number(page) - 1) * Number(limit);
             // contoh : page 1 : 1-1 = 0 : limitnya 10 : 0 * 10 = 0 jadi offset 0 datanya mulai dari 1
